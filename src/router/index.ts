@@ -4,6 +4,7 @@ import Form from '../components/Form.vue';
 import Contact from '../components/Contact.vue';
 import About from '../components/About.vue';
 import Directives from '../components/Directives.vue';
+import ErrorPage from '../components/ErrorPage.vue';
 import ToDo from '../components/ToDo.vue';
 
 const routes: Array<RouteRecordRaw> = [
@@ -36,6 +37,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/todo',
     name: 'todo',
     component: ToDo
+  },
+  {
+    path: '/:pathMatch(.*)',
+    name: 'ErrorPage',
+    component: ErrorPage
   },
 ]
 

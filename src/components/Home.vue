@@ -30,7 +30,7 @@ export default defineComponent({
 
             <!-- Main heading-->
             <div class="my-8">
-                <h1 class="font-bold text-stone-800 text-3xl sm:text-4xl text-center">NFT Preview Section</h1>
+                <h1 class="font-bold text-white text-3xl sm:text-4xl text-center">NFT Preview Section</h1>
             </div>
 
             <!--Contains all nft cards -->

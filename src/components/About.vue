@@ -24,7 +24,7 @@ export default defineComponent({
 
             <!--Heading-->
             <div class="mt-4 md:mt-8">
-                <h1 class="uppercase text-center text-4xl md:text-6xl font-bold">{{aboutData.title}}</h1>
+                <h1 class="uppercase text-center text-white text-4xl md:text-6xl font-bold">{{aboutData.title}}</h1>
             </div>
 
             <!-- Main content -->

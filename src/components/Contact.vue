@@ -25,7 +25,7 @@ export default defineComponent({
         <!-- inner-container -->
         <div class="inner-container">
 
-            <div class="relative py-8 md:py-16 text-white back-img">
+            <div class="py-8 md:py-16 text-white back-img">
                 <!--Contact-Us desc-->
                 <div>
                     <h1 class="text-center text-4xl md:text-6xl font-bold">{{contactData.title}}</h1>

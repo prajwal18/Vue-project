@@ -25,7 +25,7 @@ export default defineComponent({
             <!--Contains the description-->
             <section class="w-full lg:w-1/2 flex items-center justify-center desc-section">
                 <div class="w-full text-white">
-                    <h1 class="text-5xl font-bold">
+                    <h1 class="text-5xl text-white font-bold">
                         {{formData.title}}
                     </h1>
     

@@ -15,7 +15,7 @@ export default defineComponent({
         addItemToList():void{
             if(this.newItem !== '' && !(this.itemList.includes(this.newItem))){
                 this.itemList.push(this.newItem);
-            } else{
+            } else if(this.newItem !== ''){
                 alert(`The task: ${this.newItem} \nAlredy exists on list.`);
             }
             this.newItem = '';
@@ -46,7 +46,7 @@ export default defineComponent({
     <main class="flex justify-center">
         <div class="inner-container p-2">
             <!-- Title -->
-            <h1 class="my-8 text-4xl text-center font-bold text-stone-800">
+            <h1 class="my-8 text-4xl text-center font-bold text-white">
                 To Do List
             </h1>
 
