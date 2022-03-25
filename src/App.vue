@@ -1,30 +1,36 @@
+<script lang="ts">
+import { defineComponent, ref } from "vue";
+import Header from "./components/Header.vue";
+import data from "./AllData";
+//Interface for main data
+import allData from "./types/allDataType";
+
+export default defineComponent({
+  name: "App",
+  components: {
+    Header: Header,
+  },
+  setup() {
+    const alldata = ref<allData>(data);
+    return {
+      alldata
+    };
+  },
+
+  methods: {
+  },
+});
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<Header />
+<router-view 
+  :nftData="alldata.nftData"
+  :formData="alldata.formData"
+  :contactData="alldata.contactData"
+  :aboutData="alldata.aboutData"
+/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

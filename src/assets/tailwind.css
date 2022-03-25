@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+}
+
+/*Adding background to the website*/
+body{
+    background: var(--red) url('../../public/images/bg-intro-desktop.png') center center ;
+}
+
+
+/* Giving the main container a max width */
+.inner-container{
+    width: 100%;
+    max-width: 1440px;
+}
+
+/* Giving description a max-width */
+.desc-section,
+.form-section{
+    max-width: 500px;
+}
+
+/* Custom Shadow */
+.custom-shadow{
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.6);
+}
+
+/*NFT card*/
+.nft-card{
+    max-width: 300px;
+}
+
